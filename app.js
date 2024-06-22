@@ -35,7 +35,6 @@ app.post('/', (req, res) => {
       // console.log(weatherData);
       const temp = weatherData.main.temp;
       const description = weatherData.weather[0].description;
-      // console.log(description);
 
       // If there are multiple send request then we use write method instead of send
       res.write(
